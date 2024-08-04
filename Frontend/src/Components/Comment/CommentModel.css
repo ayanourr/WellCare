@@ -1,0 +1,102 @@
+.comment {
+  max-height: 45vh; /* Adjust this value based on your design needs */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.comment::-webkit-scrollbar {
+  width: 8px;
+}
+
+.comment::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+.comment::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+
+.emoji-picker {
+  position: absolute;
+  bottom: 50px; /* Adjust this value as needed */
+  left: 0;
+  z-index: 1000;
+}
+
+.commentInput {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.commentInput::placeholder {
+  color: #999;
+}
+
+.comment-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.comment-card img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.comment-card .text-sm {
+  margin-top: 0.5rem;
+}
+
+.comment-card .text-xs {
+  margin-top: 0.5rem;
+  color: #888;
+}
+
+.comment-card button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.comment-card button:hover {
+  color: #333;
+}
+
+.comment-card .flex {
+  align-items: center;
+}
+
+.submitCommentButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+}
+
+.submitCommentButton:hover {
+  color: #0056b3;
+}
+
+.comment-card.highlighted {
+  background-color: rgba(
+    173,
+    216,
+    230,
+    0.5
+  ); /* Light blue with some transparency */
+  transition: background-color ease; /* Smooth transition */
+}

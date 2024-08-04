@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  min-height: 940px;
+  width: 100%;
+  height: 100vh;
+}
+
+.circle {
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(to bottom, #fa39ad 40%, #fe6c4c 50%);
+  filter: blur(120px);
+}
+
+.ellipsis-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 38px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  bottom: 70px;
+  right: 1px;
+  left: 3px;
+  color: white;
+  background-color: #373a47;
+  box-shadow: 0 4px 8px rgba(178, 189, 246, 0.36);
+  border-radius: 20px;
+  padding: 8px 0;
+  z-index: 1000;
+  /* width: 33vh; */
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.dropdown-item span {
+  margin-left: 8px;
+}
+
+.profile-picture {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-handle {
+  color: gray;
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.username {
+  color: gray;
+  font-style: italic;
+}
+
+/* Styles for the logout button */
+.logout-button {
+  background-color: #f44336; /* Red */
+  /* color: white; */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; /* Darker red */
+}
+
+/* Sidebar.css */
+.search-results-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 999;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 5px 0;
+  background-color: #fff;
+  z-index: 1000;
+  background-color: beige;
+}
+
+.unread-badge {
+  position: absolute;
+  top: -4px;
+  left: 18px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+
+.searchContainer {
+  position: relative;
+  top: 0;
+  padding: 0;
+  left: 0;
+  margin-top: 0;
+  box-shadow: 0 1px 2px rgb(2, 2, 2);
+  width: 100%;
+  height: 300px;
+  z-index: 10021;
+  overflow-y: scroll;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.201), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #4f357e;
+  border-bottom: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px);
+}
+
+.searchContainer::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+.searchContainer::-webkit-scrollbar-thumb {
+  background-color: #4f357e; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+}
+
+.searchContainer::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.5); /* Color of the scrollbar track */
+}
+
+.searchInputWrapper {
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  display: flex;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-size: 13px;
+  width: 90%;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  color: white;
+}
+.searchInput::placeholder {
+  color: white;
+}
+
+.searchIcon {
+  padding: 6px;
+  background-color: #ffffff;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+}
+
+.searchIcon svg {
+  color: #5da1ec;
+  width: auto;
+  height: auto;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.search-result {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-result:last-child {
+  border-bottom: none;
+}

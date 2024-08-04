@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  background: #f3f3ff;
+}
+
+.circle {
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(to bottom, #fa39ad 40%, #fe6c4c 50%);
+  filter: blur(120px);
+}
+
+.red {
+  background: #fe624d;
+  border: 2px solid #ee5e4b;
+}
+
+.yellow {
+  background: #ffc432;
+  border: 2px solid #f2bd3a;
+}
+
+.green {
+  background: #5bde47;
+  border: 2px solid #5fc651;
+}
+
+.app-color-yellow {
+  color: #ffa41d;
+}
+
+.app-color-black {
+  color: #292b48;
+}
+
+.app-color-gray {
+  color: #877f95;
+}
+
+.app-color-lavendar {
+  color: #9ea1cf;
+}
+
+.app-color-pink {
+  color: #fb28cd;
+}
+
+.app-bg-lavendar {
+  background: #d5d7ff;
+}
+
+.app-bg-light-white {
+  background: #f7f8ff;
+}
+
+.app-bg-light-white-2 {
+  background: #eff2fc;
+}
+
+.app-color-dribbble {
+  color: #e04b85;
+}
+
+.app-shadow {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.03);
+}
+
+.app-title {
+  background: linear-gradient(45deg, #fb28cd, #7c65d7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+span.active {
+  position: relative;
+  color: #292b48;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+span.active::after {
+  content: "";
+  width: 200%;
+  height: 2px;
+  background: #292b48;
+  position: absolute;
+  bottom: -20px;
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+}
+
+.switch-bg {
+  height: 24px;
+  width: 44px;
+  background: #fb28cd;
+  border-radius: 15px;
+}
+
+.switch-indicator {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #fb28cd;
+  border: 5px solid white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.2s ease-out;
+}
+
+.switch-checkbox:checked ~ .switch-indicator {
+  transform: translateX(100%);
+}
+
+.switch-checkbox:checked ~ .switch-bg {
+  background: #e9ecfa;
+}
+
+/* HomePage.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.203), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: #4f357e;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+
+.navbar-item:hover {
+  background-color: #f0f0f0;
+}
+
+.vertical-line {
+  height: 24px;
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  z-index: 1001;
+  margin: 1em 0; /* Added margin for better visibility */
+}
+
+.sticky {
+  top: 0;
+  align-items: center;
+  padding: 1em;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.react-select__control {
+  width: 150px; /* Adjust the width as needed */
+}
+
+.filter-container label {
+  text-align: center;
+  margin-right: 0px;
+}
+
+.tabs {
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 99;
+}
+
+.tabs .chakra-tabs__tab[aria-selected="true"] {
+  border-bottom: 2px solid #0000ff;
+}
+
+.tabs.sticky {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust transparency as needed */
+  z-index: 1000;
+  width: 85%;
+}
+
+.filter-section.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust transparency as needed */
+  z-index: 1000;
+}
+
+.filter-button {
+  cursor: pointer;
+  border: 2px solid transparent; /* Initially transparent border */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Padding for button */
+  margin-right: 10px; /* Add some space between buttons */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.filter-button:hover {
+  background-color: #e2e8f0; /* Light gray background on hover */
+}
+
+.filter-button.active {
+  background-color: #4299e1; /* Blue background when active */
+  color: #ffffff; /* White text when active */
+  border-color: #4299e1; /* Blue border when active */
+}
+
+/* HomePage.css */
+.highlighted-post {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #4299e1; /* Chakra UI blue.500 color */
+  background-color: #e3f2fd; /* Light blue background */
+  border-radius: 30px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover */
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* Sidebar wrapper styles */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: linear-gradient(to bottom, #5da1ec, #4f357e);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: white;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: none;
+}
