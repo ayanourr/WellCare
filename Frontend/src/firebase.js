@@ -5,13 +5,13 @@ import { getFirestore } from "firebase/firestore";
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCc9ruSP2C-6xtTnvXNfxWdoaYiXb94PRY",
-  authDomain: "wellcare-b5b19.firebaseapp.com",
-  projectId: "wellcare-b5b19",
-  storageBucket: "wellcare-b5b19.appspot.com",
-  messagingSenderId: "599732980999",
-  appId: "1:599732980999:web:7f095c6d99876a33ad49a2",
-  measurementId: "G-PNK9YM4TK5",
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: "",
 };
 
 // Initialize Firebase
