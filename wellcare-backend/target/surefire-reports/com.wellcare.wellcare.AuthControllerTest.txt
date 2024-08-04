@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.wellcare.wellcare.AuthControllerTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.601 s -- in com.wellcare.wellcare.AuthControllerTest

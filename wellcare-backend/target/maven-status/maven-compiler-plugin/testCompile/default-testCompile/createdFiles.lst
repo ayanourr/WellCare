@@ -1,0 +1,6 @@
+com\wellcare\wellcare\WellcareApplicationTests.class
+com\wellcare\wellcare\CommentControllerTest.class
+com\wellcare\wellcare\RelationshipControllerTest.class
+com\wellcare\wellcare\PostControllerTest.class
+com\wellcare\wellcare\MessageControllerTest.class
+com\wellcare\wellcare\UserControllerTest.class

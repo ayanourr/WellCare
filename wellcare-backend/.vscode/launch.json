@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WellcareApplication<wellcare>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.wellcare.wellcare.WellcareApplication",
+            "projectName": "wellcare",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
