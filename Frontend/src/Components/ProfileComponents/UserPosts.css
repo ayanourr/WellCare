@@ -1,0 +1,63 @@
+.user-posts-card {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  /* background: linear-gradient(to bottom, #c8e7fa, #ccb0ff); */
+  /* background: linear-gradient(to bottom, #c8e7fa, #FFFFFF); */
+
+  backdrop-filter: blur(130px);
+  width: 100%;
+  color: #4f357e;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.203), 0 1px 3px rgba(0, 0, 0, 0.08); */
+}
+
+
+
+.hr-divider {
+  border: none; /* Remove default border */
+  height: 1px; /* Set the height of the line */
+  background-color: #4f357e; /* Set the color of the line */
+  margin: 20px 0;
+}
+
+.hr-divider2 {
+  border: none; /* Remove default border */
+  height: 1px; /* Set the height of the line */
+  background-color: #4f357e; /* Set the color of the line */
+}
+
+.user-posts-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.no-posts-message {
+  font-size: 1.2rem;
+  color: #4f357e81;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+@media (min-width: 450px) {
+  .flex-container {
+    flex-direction: column; /* Change flex direction to stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+  }
+
+  .flex-item {
+    width: 100%; /* Set width to 100% for full width */
+    margin-bottom: 20px; /* Add margin between items */
+  }
+
+  .no-posts-message {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}

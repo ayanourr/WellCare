@@ -1,0 +1,35 @@
+.searchContainer {
+  position: fixed;
+  top: 0;
+  left: 83px; /* Adjust the left offset as needed */
+  padding: 1rem 0rem;
+  border: 1px solid rgb(220, 220, 220);
+  box-shadow: 0 1px 2px rgb(2, 2, 2);
+  width: 11.7%;
+  height: 100vh;
+  z-index: 10000000;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.201), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: #4f357e;
+}
+
+.searchInput {
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(242, 242, 242);
+  padding: 5px 10px;
+  font-size: 13px;
+  width: 90%;
+  outline: none;
+  margin-left: 10px;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}

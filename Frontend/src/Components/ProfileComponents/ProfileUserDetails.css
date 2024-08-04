@@ -1,0 +1,70 @@
+.container {
+  /* overflow: hidden;
+    background: linear-gradient(to bottom, #c8e7fa, #FFFFFF);
+    backdrop-filter: blur(100px);
+  border-radius: 20px; */
+  color: #4f357e;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.profile-details {
+  text-align: center;
+}
+
+.profile-details img {
+  width: 150px; /* Adjust size for smaller screens */
+  height: 150px; /* Adjust size for smaller screens */
+  object-fit: cover;
+}
+
+.profile-details p {
+  margin: 5px 0;
+}
+
+.buttonWithBorder {
+  background: linear-gradient(to right, #ffffff, #faf1f1);
+  padding: 10px;
+  margin: 10px;
+  margin-top: 10px;
+  border-radius: 30px;
+  width: auto;
+  flex-wrap: nowrap;
+}
+
+.buttonWithBorder:hover {
+  background-color: #4f357e;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .no-posts-message {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-details img {
+    width: 100px; /* Adjust size for smaller screens */
+    height: 100px; /* Adjust size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-details img {
+    width: 80px; /* Adjust size for smaller screens */
+    height: 80px; /* Adjust size for smaller screens */
+  }
+
+  .profile-details p {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .edit-profile-button {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+}
